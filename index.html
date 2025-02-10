@@ -1,119 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Everyday Git</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Everyday Git</title>
 </head>
 <body>
-    <div>
-        <h1>1. Get started </h1>
-        <p>
-            Set up your development environment and create all the necessary files and folders. 
-        </p>  
+  <div >
+    <h1>Everyday Git</h1>
+    <p>Welcome to "Everyday Git," your go-to guide for mastering Git and version control!</p>
 
-    </div>
-    <div>
-        <h1>
-            2. What is Git</h1>
-        <p>
-            Start your blog by talking about what is git, talk about git being a version control system, describe what a version control system is and list any other version control systems like git but emphasize that in this blog you will be going through Git and GitHub.
-        </p>
-    </div>
-     <div>
-        <h1>3. Installing Git</h1>
-        <p>
-            Go through checking whether Git is installed on your reader's machine or not, provide directions on how to download and install Git if it is not availabe on your reader's machine. If you use any command here, make sure to include a screenshot of the command on the page alongside a caption as shown in the example below.
+    <h2>1. What is Git?</h2>
+    <p>Git is a distributed version control system (VCS) that helps developers track changes in their codebase. A version control system allows you to save snapshots of your project at different stages, making it easy to revert to a previous state if something goes wrong. Other VCS tools include Mercurial and Subversion, but Git is the most widely used.</p>
+
+    <h2>2. Installing Git</h2>
+    <p>To check if Git is installed on your machine, open your terminal and run:</p>
+    <code>git --version</code>
+    <p>If Git is not installed, download it from <a href="https://git-scm.com/" target="_blank">git-scm.com</a> and follow the installation instructions for your operating system.</p>
+    <img src="images/gitversion.png" alt="Checking Git version">
+    <p class="caption">Checking Git version</p>
+
+    <h2>3. Configuring Git</h2>
+    <p>After installing Git, configure your username and email address using the following commands:</p>
+    <code>git config --global user.name "Your Name"</code><br>
+    <code>git config --global user.email "your.email@example.com"</code>
+    <img src="images/gitaccount.png" alt="Configuring Git"><!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Everyday Git</title>
+    </head>
+    <body>
+      <div>
+        <h1>Everyday Git</h1>
+        <p>Welcome to "Everyday Git," your go-to guide for mastering Git and version control!</p>
     
-        </p>
-        <img src="./assets/r-example-1.png" alt="git-install" width="700" height = "200">
-        
+        <h2>1. What is Git?</h2>
+        <p>Git is a distributed version control system (VCS) that helps developers track changes in their codebase. A version control system allows you to save snapshots of your project at different stages, making it easy to revert to a previous state if something goes wrong. Other VCS tools include Mercurial and Subversion, but Git is the most widely used.</p>
+    
+        <h2>2. Installing Git</h2>
+        <p>To check if Git is installed on your machine, open your terminal and run:</p>
+        <code>git --version</code>
+        <p>If Git is not installed, download it from <a href="https://git-scm.com/" target="_blank">git-scm.com</a> and follow the installation instructions for your operating system.</p>
+        <figure>
+          <img src="images/gitversion.png" alt="Checking Git version">
+          <figcaption>Checking Git version</figcaption>
+        </figure>
+    
+        <h2>3. Configuring Git</h2>
+        <p>After installing Git, configure your username and email address using the following commands:</p>
+        <code>git config --global user.name "Your Name"</code><br>
+        <code>git config --global user.email "your.email@example.com"</code>
+        <figure>
+          <img src="images/gitaccount.png" alt="Configuring Git">
+          <figcaption>Configuring Git username and email</figcaption>
+        </figure>
+    
+        <h2>4. Initializing a Git Repository</h2>
+        <p>A Git repository is a folder where Git tracks changes to your files. To initialize a repository, navigate to your project folder and run:</p>
+        <code>git init</code>
+        <figure>
+          <img src="images/git_init.png" alt="Initializing a Git repository">
+          <figcaption>Initializing a Git repository</figcaption>
+        </figure>
+    
+        <h2>5. Adding Files to the Staging Area</h2>
+        <p>The staging area is where you prepare files for a commit. To add files, use:</p>
+        <code>git add . # adds all files</code>
+        <p>Tracked files are files Git is aware of, while untracked files are not yet tracked by Git.</p>
+        <figure>
+          <img src="images/gitadd.png" alt="Adding files to the staging area">
+          <figcaption>Adding files to the staging area</figcaption>
+        </figure>
+    
+        <h2>6. Committing Changes</h2>
+        <p>To save your changes, commit them with a meaningful message:</p>
+        <code>git commit -m "Your commit message"</code>
+        <p>To view past commits, use:</p>
+        <code>git log</code>
+        <figure>
+          <img src="images/git_commit.png" alt="Committing changes">
+          <figcaption>Committing changes</figcaption>
+        </figure>
+    
+        <h2>7. Branches</h2>
+        <p>Branches allow you to work on different versions of your project simultaneously. The default branch is usually called <code>main</code> or <code>master</code>.</p>
+    
+        <h2>8. Creating a Branch</h2>
+        <p>To create a new branch, use:</p>
+        <code>git branch branch-name</code>
+        <figure>
+          <img src="images/git_new_branch.png" alt="Creating a branch">
+          <figcaption>Creating a branch</figcaption>
+        </figure>
+    
+        <h2>9. Viewing All Branches</h2>
+        <p>To view all branches in your repository, run:</p>
+        <code>git branch</code>
+        <p>The active branch is marked with an asterisk (*).</p>
+        <figure>
+          <img src="images/git_branch.png" alt="Viewing all branches">
+          <figcaption>Viewing all branches</figcaption>
+        </figure>
+    
+        <h2>10. Switching Active Branches</h2>
+        <p>To switch to another branch, use:</p>
+        <code>git checkout branch-name</code>
+        <figure>
+          <img src="images/changebranch.png" alt="Switching branches">
+          <figcaption>Switching branches</figcaption>
+        </figure>
+    
+        <h2>11. Merging a Branch</h2>
+        <p>To merge a branch into the active branch, use:</p>
+        <code>git merge branch-name</code>
+        <figure>
+          <img src="images/git_merge.png" alt="Merging branches">
+          <figcaption>Merging branches</figcaption>
+        </figure>
+    
+        <h2>12. Deleting a Branch</h2>
+        <p>To delete a branch, run:</p>
+        <code>git branch -d branch-name</code>
+        <figure>
+          <img src="images/delete.png" alt="Deleting a branch">
+          <figcaption>Deleting a branch</figcaption>
+        </figure>
+    
+        <h2>13. Next Steps</h2>
+        <p>Now that you know the basics of Git, you can explore advanced topics like rebasing, resolving merge conflicts, and using GitHub for collaboration. Happy coding!</p>
+    
+        <h2>14. Deploy Your Page</h2>
+        <p>Deploy this page to GitHub Pages or Vercel to share it with the world!</p>
+    
+        <h2>15. Congratulations! You Are Done!</h2>
+        <p>You’ve successfully learned the basics of Git and created a blog to share your knowledge. Well done!</p>
+      </div>
+    </body>
+    </html>
+    
+    <p class="caption">Configuring Git username and email</p>
 
-    </div>
-    <div>
-        <h1>4.  Configuring Git</h1>
-        <p>
-            Go through how configuration of username and email address is done, take a screenshot of the commands and make sure to include them in the blog alongside a caption.
-        </p>
-    </div>
-    <div>
-        <h1>5. Intializing a new repository</h1>
-        <p>
-            Describe to your reader what a Git repository is and how to initialize a git repository (be sure to include a screenshot of the command used alongside a caption in the blog).
-        </p>
-    </div>
-    <div>
-        <h1>6. Adding Files to the staging area</h1>
-        <p>
-            Go through the process of adding files to the staging area, explain to your reader what a staging area is, also go through the difference(s) between tracked and untracked files. Make sure to include a screenshot of any command(s) used in this stage.
+    <h2>4. Initializing a Git Repository</h2>
+    <p>A Git repository is a folder where Git tracks changes to your files. To initialize a repository, navigate to your project folder and run:</p>
+    <code>git init</code>
+    <img src="images/git_init.png" alt="Initializing a Git repository">
+    <p class="caption">Initializing a Git repository</p>
 
-    </div>
-    <div>
-        <h1>7. Committing Changes</h1>
-        <p>
-            Go through how to commit changes to a git repository. Educate your readers on how to write good commit messages and teach your readers how to view past commits and how to go back to a particular commit. Make sure you include a screenshot of any commands used.
-        </p>
-    </div>
-    <div>
-        <h1>8. Branches</h1>
-        <p>
-            Describe to your reader what branches in git are and why they are important.        
-        </p>
-    </div>
-    <div>
-        <h1>9. Creating a branch</h1>
-        <p>
-            Go through how to merge branches in git, explain to your reader what a merge conflict is and how to resolve it. Make sure to include a screenshot of any command(s) used.
-        </p>
-    </div> 
+    <h2>5. Adding Files to the Staging Area</h2>
+    <p>The staging area is where you prepare files for a commit. To add files, use:</p>
+    <code>git add . # adds all files</code>
+    <p>Tracked files are files Git is aware of, while untracked files are not yet tracked by Git.</p>
+    <img src="images/gitadd.png" alt="Adding files to the staging area">
+    <p class="caption">Adding files to the staging area</p>
 
-    <div>
-        <h1>10. Viewing all branches</h1>
-        <p>
-            Show your readers how they can view all branches present in a repository and how they can know which branch is the active branch. Include a screenshot of any command(s) used.
-        </p>
-    </div>
-    <div>
-        <h1> 11. Switching active branches </h1>
-        <p>
-            Go through how to push changes to a remote repository, make sure to include a screenshot of any command(s) used.
-        </p>
-    </div>
-    <div>
-        <h1>12. Merging a branch</h1>
-        <p>
-            Show your users how to merge branches using a git command. Include a screenshot of any command(s) used.
-        </p>
-    </div>
-    <div>
-        <h1>13. Deleting a branch </h1>
-        <p>
-            Go through how to delete a branch. Include a screenshot of any command(s) used.
-        </p>
+    <h2>6. Committing Changes</h2>
+    <p>To save your changes, commit them with a meaningful message:</p>
+    <code>git commit -m "Your commit message"</code>
+    <p>To view past commits, use:</p>
+    <code>git log</code>
+    <img src="images/git_commit.png" alt="Committing changes">
+    <p class="caption">Committing changes</p>
 
-    </div>
-    <div>
-        <h1>14. Next steps</h1>
-        <p>
-            Recommend next steps for your users, e.g, the next concept in Git they could learn, the next tool related to Git e.g GitHub e.t.c 
-        </p>
-    </div>
+    <h2>7. Branches</h2>
+    <p>Branches allow you to work on different versions of your project simultaneously. The default branch is usually called <code>main</code> or <code>master</code>.</p>
 
-    <div>
-        <h1>15. Deploy your page</h1>
-        <p>
-            Deploy your page to Vercel or GitHub pages or any hosting platform of your choice and submit the link
+    <h2>8. Creating a Branch</h2>
+    <p>To create a new branch, use:</p>
+    <code>git branch branch-name</code>
+    <img src="images/git_new_branch.png" alt="Creating a branch">
 
-         </p>
-    </div>
-    <div>
-        <h1>15. Congratulations! You are done!</h1>
-        <p>
-            That's it.
-        </p>
+    <p class="caption">Creating a branch</p>
 
-    </div>
-       
+    <h2>9. Viewing All Branches</h2>
+    <p>To view all branches in your repository, run:</p>
+    <code>git branch</code>
+    <p>The active branch is marked with an asterisk (*).</p>
+    <img src="images/git_branch.png" alt="Viewing all branches">
+    <p class="caption">Viewing all branches</p>
 
+    <h2>10. Switching Active Branches</h2>
+    <p>To switch to another branch, use:</p>
+    <code>git checkout branch-name</code>
+    <img src="images/" alt="Switching branches">
+    <p class="caption">Switching branches</p>
+
+    <h2>11. Merging a Branch</h2>
+    <p>To merge a branch into the active branch, use:</p>
+    <code>git merge branch-name</code>
+    <img src="images/git_merge.png" alt="Merging branches">
+    <p class="caption">Merging branches</p>
+
+    <h2>12. Deleting a Branch</h2>
+    <p>To delete a branch, run:</p>
+    <code>git branch -d branch-name</code>
+    <img src="images/gi" alt="Deleting a branch">
+    <p class="caption">Deleting a branch</p>
+
+    <h2>13. Next Steps</h2>
+    <p>Now that you know the basics of Git, you can explore advanced topics like rebasing, resolving merge conflicts, and using GitHub for collaboration. Happy coding!</p>
+
+    <h2>14. Deploy Your Page</h2>
+    <p>Deploy this page to GitHub Pages or Vercel to share it with the world!</p>
+
+    <h2>15. Congratulations! You Are Done!</h2>
+    <p>You’ve successfully learned the basics of Git and created a blog to share your knowledge. Well done!</p>
+  </div>
 </body>
 </html>
